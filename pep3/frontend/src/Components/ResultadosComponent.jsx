@@ -7,7 +7,7 @@ export default function ResultadosComponent() {
     localStorage.setItem("puntaje", 0);
     localStorage.setItem("restantes", 4);
     console.log()
-    window.location.href = "/pregunta";
+    window.location.href = "/prueba-facil";
   };
 
   const [puntaje, setPuntaje] = useState(

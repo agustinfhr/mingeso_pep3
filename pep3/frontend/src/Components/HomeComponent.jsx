@@ -8,7 +8,7 @@ export default function HomeComponent() {
   const ComenzarFacil = () => {
     localStorage.setItem("puntaje", 0);
     localStorage.setItem("restantes", 4);
-    window.location.href = "/pregunta";
+    window.location.href = "/prueba-facil";
   };
 
   return (

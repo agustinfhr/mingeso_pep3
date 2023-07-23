@@ -1,4 +1,4 @@
-package backend.tingeso.pregunta;
+package backend.tingeso.facil;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class PreguntaApplication {
+public class FacilApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PreguntaApplication.class, args);
+		SpringApplication.run(FacilApplication.class, args);
 	}
 
 }

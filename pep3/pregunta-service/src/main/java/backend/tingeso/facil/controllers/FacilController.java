@@ -1,7 +1,7 @@
-package backend.tingeso.pregunta.controllers;
+package backend.tingeso.facil.controllers;
 
-import backend.tingeso.pregunta.entities.PreguntaEntity;
-import backend.tingeso.pregunta.services.PreguntaService;
+import backend.tingeso.facil.entities.FacilEntity;
+import backend.tingeso.facil.services.FacilService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,13 +12,13 @@ import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/pregunta")
-public class PreguntaController {
+public class FacilController {
     @Autowired
-    PreguntaService preguntaService;
+    FacilService facilService;
 
     @GetMapping
-    public ResponseEntity<ArrayList<PreguntaEntity>> listadoProblemas(){
-        ArrayList<PreguntaEntity> listaProblemas = preguntaService.obtenerData();
+    public ResponseEntity<ArrayList<FacilEntity>> listadoProblemas(){
+        ArrayList<FacilEntity> listaProblemas = facilService.obtenerData();
         if(listaProblemas.isEmpty()){
             return ResponseEntity.noContent().build();
         }

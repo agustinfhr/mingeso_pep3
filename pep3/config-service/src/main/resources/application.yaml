@@ -7,6 +7,6 @@ spring:
         git:
           default-label: main
           uri: https://github.com/agustinfhr/mingeso_pep3
-          search-paths: config-data
+          search-paths: config-data2
   application:
     name: config-service

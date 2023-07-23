@@ -1,10 +1,10 @@
-package backend.tingeso.pregunta;
+package backend.tingeso.facil;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PreguntaApplicationTests {
+class FacilApplicationTests {
 
 	@Test
 	void contextLoads() {
