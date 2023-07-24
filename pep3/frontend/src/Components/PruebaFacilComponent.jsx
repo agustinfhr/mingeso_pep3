@@ -12,7 +12,7 @@ class PruebaFacilComponent extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8080/facil")
+    fetch("http://localhost:8080/pregunta/basico")
       .then((response) => response.json())
       .then((data) => this.setState({ datas: data }));
   }

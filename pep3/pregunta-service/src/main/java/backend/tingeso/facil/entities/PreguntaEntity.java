@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "prueba_facil")
+@Table(name = "problemas")
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class FacilEntity {
+public class PreguntaEntity {
     @Id
     @NotNull
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,4 +21,5 @@ public class FacilEntity {
     private String enunciado;
     private String codigo;
     private String respuesta;
+    private String nivel;
 }
